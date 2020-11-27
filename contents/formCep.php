@@ -1,6 +1,3 @@
-<?php
-?>
-
 <div class="container container-sm container-md container-lg">
     <form class="pre-loading"> 
         <div class="form-row">
