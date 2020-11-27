@@ -1,0 +1,75 @@
+@import './colors.scss';
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #000;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    position: relative;
+    background: #fff;
+    top: 20vh;
+    border-radius: 1rem;
+    box-shadow: 4px 6px 8px 2px #ccc;
+    padding: 0.8rem;
+}
+
+.toast {
+    position: absolute;
+    min-width: 200px;
+    top: 20px;
+    right: 0;
+    margin-right: 4px;
+}
+
+.btn-outback {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.toast {
+    text-align: center;
+
+    &.loading {
+        background-color: rgba(0,100,255, 0.2);
+    }
+
+    &.success {
+        background-color: rgba(0,255,50, 0.2);
+    }
+
+    &.fail {
+        background-color: rgba(255,0,0, 0.4);
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    button {
+        width: 100%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}

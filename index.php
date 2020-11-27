@@ -12,7 +12,16 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
         <link href="./src/plugins/bootstrap-4.5.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="./src/css/formCep.css" rel="stylesheet" type="text/css" />
+        <link href="./src/plugins/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+        <link href="./src/styles/loading.css" rel="stylesheet" type="text/css" />
+        <link href="./src/styles/formCep.css" rel="stylesheet" type="text/css" />
+
+        <script src="./src/plugins/jquery-3.5.1.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="./src/plugins/bootstrap-4.5.3-dist/js/bootstrap.js" type="text/javascript"></script>
+        <script src="./src/plugins/fontawesome-free-5.15.1-web/js/all.js" type="text/javascript"></script>
+        <script src="./src/js/formCep.js" type="text/javascript"></script>
+        <script src="./src/js/Toast.js" type="text/javascript"></script>
         
     </head>
 
@@ -21,10 +30,6 @@
         <?php 
             include('./contents/formCep.php');
         ?>
-
-        <script src="./src/plugins/jquery-3.5.1.js" type="text/javascript"></script>
-        <script src="./src/plugins/bootstrap-4.5.3-dist/js/bootstrap.js" type="text/javascript"></script>
-        <script src="./src/js/formCep.js" type="text/javascript"></script>
 
     </body>
 </html>

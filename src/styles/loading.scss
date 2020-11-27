@@ -1,0 +1,39 @@
+@mixin nth-children($points...) {
+    @each $point in $points {
+        &:nth-child(#{$point}) {
+            @content;
+        }
+    }
+}
+
+form .pre-loading {
+    height: 214px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+
+    & .form-group  {
+
+        label {
+            display: none;
+        }
+
+        input {
+            border: none;
+            margin: 10px;
+            animation: pulse 1s infinite ease-in-out;
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+    50% {
+        background-color: rgba(165, 165, 165, 0.3)
+    }
+    100% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+}
