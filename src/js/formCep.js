@@ -13,9 +13,9 @@ $(document).ready(function(){
         if(cep.length == 8 && !isNaN(cep)) {
             
             $.ajax({
-                url: `https://viacep.com.br/ws/${cep}/json/`,
-                method: "GET",
-                contentType: "aplication/json",
+                url: '/../src/api/consulta_cep.php',
+                method: "POST",
+                data: `cep=${cep}`,
                 beforeSend: function() {
                     $("body").append(Toast('<i class="fa fa-search fa-lg faa-float animated fa-fw font-blue"></i>', message, 'loading'));
 
@@ -25,6 +25,8 @@ $(document).ready(function(){
 
                 $(`#${message.replace(/\s/g, "_")}`).hide();
 
+                response = JSON.parse(response);
+                
                 if(!response.erro) {
 
                     message = "Dados localizados";
