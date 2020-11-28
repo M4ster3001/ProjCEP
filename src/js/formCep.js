@@ -26,7 +26,7 @@ $(document).ready(function(){
                 $(`#${message.replace(/\s/g, "_")}`).hide();
 
                 response = JSON.parse(response);
-                
+
                 if(!response.erro) {
 
                     message = "Dados localizados";
@@ -50,6 +50,8 @@ $(document).ready(function(){
                     $(`#${message.replace(/\s/g, "_")}`).toast("show");
 
                     $(`#${message.replace(/\s/g, "_")}`).delay(2000).fadeOut().fadeOut();
+
+                    $("form")[0].reset();
                 }
             }).fail(function() {
 
@@ -61,6 +63,8 @@ $(document).ready(function(){
                 $(`#${message.replace(/\s/g, "_")}`).toast("show");
 
                 $(`#${message.replace(/\s/g, "_")}`).delay(2000).fadeOut().fadeOut();
+
+                $("form")[0].reset();
             })
         } else {
 
